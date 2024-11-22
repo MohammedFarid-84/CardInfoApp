@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <link rel="shortcut icon" href="../icons/Card_info_App.png" type="image/x-icon">
+    <script src="../libs/sql-wasm.js"></script>
+</head>
+<body>
+    <div class="searchbox">
+        <input type="text" name="searchtext" id="searchtext" placeholder="ابحث برقم الحساب أو اسم العميل">
+        <button type="button" id="searchbtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        
+    </div>
+    <!-- here table of search results -->
+    <div class="results" id="results">
+        <table class="resultstbl">
+            <thead>
+                <tr>
+                    <th>م</th>
+                    <th>رقم الحساب</th>
+                    <th>رقم المجموعة</th>
+                    <th>اسم العميل</th>
+                    <th>العنوان</th>
+                    <th>تحديث</th>
+                </tr>                
+            </thead>
+            <tbody>
+                <!-- daynamic resultes -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="notification" class="hidden"></div>
+
+    <script src="../js/notifications.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>

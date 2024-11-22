@@ -1,0 +1,185 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* الحاوية */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* الرأس */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0056b3;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* القسم: معلومات العميل */
+.custinfo {
+    margin-bottom: 20px;
+}
+
+.custinfo label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.custinfo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.custinfo input:focus {
+    border-color: #0056b3;
+}
+
+/* الصور */
+.cardimg {
+    margin-bottom: 20px;
+}
+
+.cardimg h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+}
+
+.card_view {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.camera-btn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.camera-btn:hover {
+    background-color: #004494;
+}
+
+/* بيانات البطاقة */
+.cardinfo h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #0056b3;
+}
+
+/* الأزرار */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.confirm-btn, .error-btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+}
+
+.error-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.error-btn:hover {
+    background-color: #c82333;
+}
+
