@@ -1,5 +1,5 @@
 // تحميل مكتبة SQL.js
-const config = { locateFile: filename => "../libs/sql-wasm.wasm" };
+const config = { locateFile: filename => '../libs/${filename}' };
 
 initSqlJs(config).then(SQL => {
     // تحميل قاعدة البيانات
